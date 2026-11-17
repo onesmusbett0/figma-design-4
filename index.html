@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <title>Canopy</title>
+</head>
+<body>
+
+    <nav>
+        <h3>Canopy</h3>
+        <div>
+            <p>Plants</p>
+            <p>Pots</p>
+            <p>Care Guides</p>
+            <p>Gifting</p>
+        </div>
+        <button class="btn-primary">Cart</button>
+    </nav>
+    <main>
+        <div id="right-block">
+            <h6>NEW ARRIVALS. SPRING 26</h6>
+            <h1>Bring the <br> Room <span>alive</span></h1>
+            <p id="paragraph">Hand picked houseplants, potted and delivered within 48 hours, with care notes written for your light.</p>
+            <div id="cta">
+                <button class="btn-cta">Shop Plants</button>
+                <a href="/">Browse Selection.</a>
+            </div>
+            <div id="footer">
+                <p>4.9</p>
+                <p>8,400 reviews.</p>
+                <p>Free Returns.</p>
+                <p>Grower Direct.</p>
+            </div>
+        </div>
+
+        <!-- Leaf image section -->
+         <div id="leaf-section">
+            <img src="/bg.webp" alt="Lush Green image">
+         </div>
+    </main>
+    
+</body>
+<style>
+    @media (max-width:1080px) {
+        img{
+            display: none;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+
+    }
+    body{
+        background-color:#012B1D ;
+        font-family: "Chivo", sans-serif;
+        color: white;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #fff;
+        align-items: center;
+        z-index: 1000;
+        position: relative;
+    }
+    nav h3{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    nav div{
+        display: flex;
+        gap: 12px;
+        font-size: 24px;
+        font-weight: 100;
+        font-family: "Chivo", sans-serif;
+    }
+    button{
+        width: 191px;
+        font-size:24px ;
+        border-radius: 50px;
+        background-color: #01b36c;
+        border: none;
+        color: white;
+        height: 53px;
+        font-weight: 100;
+    }
+    .btn-cta{
+        background-color: #F56D07;
+    }
+    a{
+        color: white;
+        font-size: 24px;
+
+    }
+    h1{
+        font-size: 170px;
+        margin: 0;
+        font-family: "Italiana", serif;
+        font-weight: 400;
+
+    }
+    span{
+        color: #01b36c;
+    }
+    #paragraph{
+        font-family: "Chivo", sans-serif;
+        width: 50%;
+        font-size: 24px;
+        font-weight: 100;
+
+    }
+    #footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 50%;
+    }
+    #cta{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+    }
+    #right-block{
+        padding-left:30px;
+    }
+    #leaf-section{
+        position: relative;
+        width: 60%;
+        height: 150vh;
+        display: flex;
+        flex-wrap: wrap;
+        transform: translate(0px, -100px);
+        
+        z-index: 0;
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            100% 100%,
+            45% 100%
+        );
+
+    }
+    #leaf-section img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:1808px;
+        height: auto;
+        object-fit: contain;
+        object-position: left center;
+        
+        
+
+
+    }
+
+</style>
+</html>
